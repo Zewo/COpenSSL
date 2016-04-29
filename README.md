@@ -20,6 +20,7 @@ sudo apt-get install libssl-dev
 
 ```bash
 brew install openssl
+brew link --force openssl
 ```
 
 ## Usage
