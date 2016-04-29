@@ -6,15 +6,23 @@ COpenSSL
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://tldrlegal.com/license/mit-license)
 [![Slack Status](https://zewo-slackin.herokuapp.com/badge.svg)](http://slack.zewo.io)
 
-**OpenSSL** for **Swift 2.2**.
+**OpenSSL** for **Swift 3.0**.
 
 ## Installation
 
-- Install `libssl-dev`
+### Linux
 
 ```bash
 sudo apt-get install libssl-dev
 ```
+
+### OS X
+
+```bash
+brew install openssl
+```
+
+## Usage
 
 - Add `COpenSSL` to your `Package.swift`
 
@@ -23,16 +31,10 @@ import PackageDescription
 
 let package = Package(
 	dependencies: [
-		.Package(url: "https://github.com/Zewo/COpenSSL.git", majorVersion: 0, minor: 2)
+		.Package(url: "https://github.com/Zewo/COpenSSL.git", majorVersion: 0, minor: 6)
 	]
 )
 
-```
-
-- OSX build command
-
-```bash
-$ swift build -Xcc -I/usr/local/include -Xlinker -L/usr/local/lib
 ```
 
 ## Community
